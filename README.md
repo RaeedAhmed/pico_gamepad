@@ -6,6 +6,8 @@
 - Unplug the pico from power
 - While holding the BOOTSEL button, plug in the pico
 - Release BOOTSEL when `RPI-RP2` disk is mounted
+- Download RPi Pico [Flash Reset](https://cdn-learn.adafruit.com/assets/assets/000/099/419/original/flash_nuke.uf2?1613329170)
+- Copy Reset UF2 file to pico, which will then automatically reboot and mount
 
 ### CircuitPython
 - Download the latest [CircuitPython](https://circuitpython.org/board/raspberry_pi_pico/)
