@@ -14,10 +14,10 @@ REPORT_DESCRIPTOR = bytes((
     # Buttons
     0x05, 0x09,  # Usage Page (Buttons)
     0x19, 0x01,  # Usage Minimum (Button 1)
-    0x29, 0x11,  # Usage Maximum (Button 11)
+    0x29, 0x0B,  # Usage Maximum (Button 11)
     0x15, 0x00,  # Logical Minimum (0)
     0x25, 0x01,  # Logical Maximum (1)
-    0x95, 0x03,  # Report Count (3)
+    0x95, 0x0B,  # Report Count (11)
     0x75, 0x01,  # Report Size (1)
     0x81, 0x02,  # Input (Data, Var, Abs)
     # Hat Switch (Joystick)
@@ -47,5 +47,3 @@ gamepad = usb_hid.Device(
 )
 
 usb_hid.enable((gamepad,))
-
-print("Gamepad enabled")
